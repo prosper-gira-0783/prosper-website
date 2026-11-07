@@ -1,0 +1,347 @@
+```css
+/* =====================================
+   GENERAL PAGE STYLING
+===================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lavender;
+    font-family: Arial, sans-serif;
+    color: navy;
+}
+
+/* =====================================
+   UNIVERSITY HEADER
+===================================== */
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.must-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    color: black;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.subtitle {
+    color: navy;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+/* =====================================
+   MAIN CONTENT
+===================================== */
+
+main {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px 25px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 25px;
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px lightgray;
+}
+
+/* Main heading inside the card */
+.login-container h2 {
+    color: navy;
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Description under the heading */
+.description {
+    color: gray;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+/* =====================================
+   FORM FIELDS
+===================================== */
+
+form label {
+    display: block;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Input field and icon container */
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 0 15px;
+}
+
+/* Email and password icons */
+.input-symbol {
+    color: black;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+    margin-right: 13px;
+}
+
+/* Input boxes */
+.input-container input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: black;
+}
+
+/* Input placeholder */
+.input-container input::placeholder {
+    color: gray;
+}
+
+/* Highlight input when selected */
+.input-container:focus-within {
+    border-color: blue;
+}
+
+/* =====================================
+   FORGOT PASSWORD
+===================================== */
+
+.forgot-password {
+    text-align: right;
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+.forgot-password a {
+    color: blue;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================
+   SIGN IN AND FORM SUBMIT BUTTONS
+===================================== */
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 13px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: blue;
+}
+
+/* =====================================
+   SIGN-UP MESSAGE
+===================================== */
+
+.signup-link {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: gray;
+}
+
+/* =====================================
+   PORTAL NAVIGATION BUTTONS
+===================================== */
+
+.portal-buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Create Account and How to Apply */
+.portal-button {
+    flex: 1;
+    width: auto;
+    min-width: 0;
+    display: block;
+    box-sizing: border-box;
+    padding: 12px 8px;
+    margin: 0;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 7px;
+    color: blue;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.portal-button:hover {
+    background-color: lightblue;
+    border-color: blue;
+    color: navy;
+}
+
+/* =====================================
+   HOW TO APPLY GUIDE
+===================================== */
+
+.application-step {
+    padding: 12px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.application-step h3 {
+    color: black;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.application-step h3 i {
+    color: black;
+    margin-right: 8px;
+}
+
+.application-step p {
+    color: gray;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Important information section */
+.application-notice {
+    background-color: lavender;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.application-notice h3 {
+    color: black;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.application-notice p {
+    color: black;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.application-notice a {
+    color: navy;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Navigation buttons on the guide page */
+.guide-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.guide-buttons .portal-button {
+    flex: 1;
+    text-decoration: none;
+}
+
+/* =====================================
+   GENERAL LINKS
+===================================== */
+
+a {
+    color: navy;
+}
+
+/* =====================================
+   PAGE FOOTER
+===================================== */
+
+footer {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .portal-buttons,
+    .guide-buttons {
+        flex-direction: column;
+    }
+
+    .portal-button {
+        width: 100%;
+    }
+}
+```
